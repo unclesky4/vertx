@@ -1,4 +1,4 @@
-package org.unclesky4.vertx.datasource.config;
+package org.unclesky4.vertx.datasource_jdbc.config;
 
 import java.sql.Connection;
 import java.sql.SQLException;
@@ -58,5 +58,9 @@ public class HikariDataSourceConfig {
 			e.printStackTrace();
 			return null;
 		}
+	}
+	
+	public void closeConnection(Connection connection) throws SQLException {
+		connection.close();
 	}
 }

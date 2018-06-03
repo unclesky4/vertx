@@ -1,11 +1,11 @@
-package org.unclesky4.vertx.datasource;
+package org.unclesky4.vertx.datasource_jdbc;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-import org.unclesky4.vertx.datasource.config.HikariDataSourceConfig;
+import org.unclesky4.vertx.datasource_jdbc.config.HikariDataSourceConfig;
 
 
 public class Start {
