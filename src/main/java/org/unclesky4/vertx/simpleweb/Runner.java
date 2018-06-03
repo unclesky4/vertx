@@ -1,4 +1,4 @@
-package org.unclesky4.vertx;
+package org.unclesky4.vertx.simpleweb;
 
 import java.io.File;
 import java.io.IOException;

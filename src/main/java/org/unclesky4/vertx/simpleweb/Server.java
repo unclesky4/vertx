@@ -1,12 +1,9 @@
 package org.unclesky4.vertx.simpleweb;
 
 import org.thymeleaf.templateresolver.ClassLoaderTemplateResolver;
-import org.unclesky4.vertx.Runner;
 
 import io.vertx.core.AbstractVerticle;
-import io.vertx.core.Handler;
 import io.vertx.ext.web.Router;
-import io.vertx.ext.web.RoutingContext;
 import io.vertx.ext.web.handler.StaticHandler;
 import io.vertx.ext.web.templ.ThymeleafTemplateEngine;
 
@@ -44,6 +41,7 @@ public class Server extends AbstractVerticle {
 			RoutingContext.response().putHeader("content-type", "text/html").end("Hello World!");
 		});
 		
+		//测试thymeleaf模版引擎
 		router.route("/index").handler(routingContext -> {
 			routingContext.put("username", "huang zhibiao");
 			templateEngine.render(routingContext, "", "/index", res -> {
